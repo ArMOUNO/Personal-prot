@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="path/to/animate.css">
+
     <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="relative">
@@ -16,7 +18,7 @@
                     <img src="Mouno.jpg" alt="" class="rounded-full w-24 flex mx-auto py-5 ">
                     </div>
                 <div class=" font-serif  flex items-center flex-col">
-                    <h3 class="font-bold">Abu Rayhan Mouno</h3>
+                    <h3 class="font-bold roboto-slab">Abu Rayhan Mouno</h3>
                     <h3 >Web Developer</h3>
                     
                 </div>
@@ -42,24 +44,30 @@
 
             <!-- Column 2 -->
             <div class="bg-gray-300 p-4 col-span-6 relative max-h-screen overflow-y-scroll">
-                <div class="py-40 flex justify-between items-center">
+                <div class="pt-40 pb-32 flex justify-between items-center">
 
                     <!-- First page -->
 
                     <div>
-                        <p class="text-6xl font-bold anim-fade-in">Hi!</p>
-                        <p class="flex flex-col text-6xl font-hero font-bold anim-fade-in">I'm Mouno.</p>
-                        <p class="flex flex-col py-3 text-1xl font-thin anim-fade-in">Using HTML and Tailwind.</p>
-                        <button class="border-[1.5px] w-32 text-center px-3 py-2 rounded-xl font-light bg-slate-400 text-blue-50 hover:transition duration-500 ease-in-out transform hover:scale-105 hover:bg-red-400 hover:text-white hover:cursor-pointer hover:active:bg-slate-500">Download CV</button>
+                        <p class="text-6xl font-bold anim-fade-in sedan-sc-regular ">Hi!</p>
+                        <p class="flex flex-col text-6xl font-hero font-bold anim-fade-in sedan-sc-regular">I'm  Mouno.</p>
+                        <p class="flex flex-col py-3 text-1xl font-thin anim-fade-in">Professional Web Developer.</p>
+                        <button class=" pt-5border-[1.5px] w-32 text-center px-3 py-2 rounded-xl font-light bg-slate-400 text-blue-50 hover:transition duration-500 ease-in-out transform hover:scale-105 hover:bg-red-400 hover:text-white hover:cursor-pointer hover:active:bg-slate-500">Download CV</button>
+                        <div>
+                            <p class="text-4xl animate__animated animate__fadeInDown">Text slides down</p>
+
+
+
+                        </div>
                     </div>
-                    <img src="hero1.png" alt="" class="filter grayscale h-64 flex flex-col justify-end">
+                    <img  src="hero1.png" alt="" class="filter grayscale h-64 flex flex-col justify-end border-none">
                 </div>
                 
                 <!-- About Me page -->
 
                 <div class="flex flex-col py-20"><hr>
-                    <p class="font-thin py-3">About Me</p>
-                    <p class="text-6xl font-bold font-hero py-3">Who am I?</p>
+                    <p class="font-thin py-3 space-italic text-2xl">About Me</p>
+                    <p class="text-6xl font-bold font-hero py-3 space-italic text-2xl">Who am I?</p>
                     <p class="py-5">I'm <span class="font-bold">Abu Rayhan Mouno</span>.
                         A frontend web developer proficient in HTML, CSS, Tailwind CSS, JavaScript, and React. He creates visually appealing and interactive web applications, staying updated with industry trends. Mouno's dedication, adaptability, and collaborative skills ensure the delivery of high-quality solutions that exceed client expectations.</p>
                 </div>
@@ -91,8 +99,8 @@
                 <!-- Expertise Page -->
 
                 <div class="py-20"><hr>
-                    <p class="py-4">WHAT I DO?</p>
-                    <p class="py-3">HERE ARE SOME OF MY EXPERTISE</p>
+                    <p class="py-4 space-italic text-2xl">WHAT I DO?</p>
+                    <p class="py-3  roboto-slab">HERE ARE SOME OF MY EXPERTISE</p>
                 </div>
                 <div class="flex justify-between text-center">
                     <div class=" border-b-2 border-b-green-600 flex flex-col justify-center w-1/3 w-64 h-[250px] bg-white relative">
@@ -123,9 +131,9 @@
 
                 <!-- Skill page -->
 
-                <div class="py-64"><hr>
-                    <p class="py-4 text-4xl">MY Skills</p>
-                    <p class="font-thin py-4">The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                <div class="pt-28"><hr>
+                    <p class="py-4 space-italic text-2xl">MY Skills</p>
+                    <p class="font-thin pt-4 pb-10">The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
 
                     <!-- HTML with progress element using Tailwind CSS -->
 
@@ -144,7 +152,7 @@
                         <div class="">
                             <p class="px-2">CSS</p>
                             <div class= "bg-slate-200 w-80 h-2 rounded-full flex items-center">
-                                <div class="bg-yellow-400 w-[80%] h-full rounded-full">
+                                <div class="bg-yellow-400 w-[85%] h-full rounded-full">
                                 </div>
                                 <div class="w-4 h-4 rounded-full bg-yellow-400 -ms-2">
                                 </div>
@@ -158,7 +166,7 @@
                         <div class="py-5">
                             <p class="px-2">Js</p>
                             <div class= "bg-slate-200 w-80 h-2 rounded-full flex items-center">
-                                <div class="bg-red-600 w-[80%] h-full rounded-full">
+                                <div class="bg-red-600 w-[70%] h-full rounded-full">
                                 </div>
                                 <div class="w-4 h-4 rounded-full bg-red-600 -ms-2">
                                 </div>
@@ -168,7 +176,7 @@
                         <div class="py-5">
                             <p class="px-2">React</p>
                             <div class= "bg-slate-200 w-80 h-2 rounded-full flex items-center">
-                                <div class="bg-green-600 w-[80%] h-full rounded-full">
+                                <div class="bg-green-600 w-[90%] h-full rounded-full">
                                 </div>
                                 <div class="w-4 h-4 rounded-full bg-green-600 -ms-2">
                                 </div>
@@ -180,8 +188,8 @@
                     
                 </div>
                     <!-- Education -->
-                <div><hr>
-                    <p class="pt-4 pb-4">Education</p>
+                <div>
+                    <p class="pt-8 space-italic text-2xl">Education</p><hr>
                     
                     <div class="bg-blue-500 h-12 flex justify-center items-center">
                         <p class="  font-bold text-white">Bachelor of Science in Computer Science and Engineering </p>
@@ -213,6 +221,45 @@
                     </div>
 
                     </div>
+                    
+                        <div class="pt-4">
+                            <p class="space-italic text-2xl">Experences</p>
+                            <div class="flex pt-4">
+                                <div class="pt-4 flex flex-col items-center w-12">
+                                    <img src="icon/circle-experence.png" alt="" class="h-12 w-12 border-4 rounded-full ">
+                                    <div class="bg-gray-100 h-64 w-[5px] "></div>
+                                </div>
+                                <div class="bg-white w-full h-60 flex flex-col mt-16 rounded-md">
+                                    <p class="text-4xl font-bold mx-3">Frontend Developer</p>
+                                    <p class="mx-3 pt-5 font-thin">Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                </div>
+                            </div>
+                            <!-- EX2 -->
+                            <div class="flex">
+                                <div class=" flex flex-col items-center w-12">
+                                    <img src="icon/circle-experence.png" alt="" class="h-12 w-12 border-4 rounded-full ">
+                                    <div class="bg-gray-100 h-72 w-[5px] "></div>
+                                </div>
+                                <div class="bg-white w-full h-60 flex flex-col mt-14 rounded-md">
+                                    <p class="text-4xl font-bold mx-3">System Analyst</p>
+                                    <p class="mx-3 pt-5 font-thin">Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                </div>
+                            </div>
+                            <!-- ex3 -->
+                            <div class="flex">
+                                <div class=" flex flex-col items-center w-12">
+                                    <img src="icon/circle-experence.png" alt="" class="h-12 w-12 border-4 rounded-full ">
+                                    <div class="bg-gray-100 h-72 w-[5px] ">
+                                        
+                                    </div>
+                                    <div class="h-6 w-6 border-4 rounded-full "></div>
+                                </div>
+                                <div class="bg-white w-full h-60 flex flex-col mt-14 rounded-md">
+                                    <p class="text-4xl font-bold mx-3">System Analyst</p>
+                                    <p class="mx-3 pt-5 font-thin">Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                </div>
+                            </div>
+                        </div>
                     
                 </div>
 
