@@ -11,10 +11,10 @@
 </head>
 
 <body class="relative">
-    <div class="grid grid-cols-8 gap-1">
+    <div class="lg:grid  lg:grid-cols-8 gap-1">
 
         <!-- Column1 -->
-        <div class="bg-slate-50 p-4 col-span-2 h-max relative max-h-screen overflow-y-scroll">
+        <div class="bg-slate-50 p-4  lg:col-span-2  h-max relative max-h-screen lg:overflow-y-scroll">
 
             <div>
                 <img src="Mouno.jpg" alt="" class="rounded-full w-24 flex mx-auto py-5 ">
@@ -61,7 +61,7 @@
         </div>
 
         <!-- Column 2 -->
-        <div class="bg-gray-300 p-4 col-span-6 relative max-h-screen overflow-y-scroll">
+        <div class="bg-gray-300  p-4 col-span-6 relative max-h-screen lg:overflow-y-scroll">
             <div class="pt-32 pb-32 flex justify-between items-center">
 
                 <!-- First page -->
@@ -71,8 +71,8 @@
                     <p class="flex flex-col text-6xl font-hero font-bold anim-fade-in sedan-sc-regular">I'm Mouno.</p>
                     <p class="flex flex-col py-3 text-1xl font-thin anim-fade-in">Professional Web Developer.</p>
                     <button
-                        class=" pt-5border-[1.5px] w-32 text-center px-3 py-2 rounded-xl font-light bg-slate-400 text-blue-50 hover:transition duration-500 ease-in-out transform hover:scale-105 hover:bg-red-400 hover:text-white hover:cursor-pointer hover:active:bg-slate-500">Download
-                        CV</button>
+                        class=" pt-5border-[1.5px] w-32 text-center px-3 py-2 rounded-xl font-light bg-slate-400 text-blue-50 hover:transition duration-500 ease-in-out transform hover:scale-105 hover:bg-red-400 hover:text-white hover:cursor-pointer hover:active:bg-slate-500"><a href="MounoCV.pdf" download >Download  CV</a>
+                       </button>
                     <div>
                         <p class="pt-16 text-6xl font-bold space-italic  animate-slide-right">Welcome to my portfolio...
                         </p>
@@ -100,7 +100,7 @@
                     dedication, adaptability, and collaborative skills ensure the delivery of high-quality solutions
                     that exceed client expectations.</p>
             </div>
-            <div class="flex justify-between text-center">
+            <div class="flex flex-col justify-between text-center md:flex-row gap-y-5 items-center">
                 <div
                     class="shadow-lg shadow-lime-100 border-b-2 border-b-green-600 flex flex-col justify-center w-1/4 w-44 h-32 bg-white">
                     <img src="icon/web.png" alt="" class="w-10 mx-auto">
@@ -141,7 +141,7 @@
                 <p class="py-4 space-italic text-2xl">WHAT I DO?</p>
                 <p class="py-3  roboto-slab">HERE ARE SOME OF MY EXPERTISE</p>
             </div>
-            <div class="flex justify-between text-center">
+            <div class="flex flex-col md:flex-row items-center justify-between text-center gap-y-20">
                 <div
                     class=" border-b-2 border-b-green-600 flex flex-col justify-center w-1/3 w-64 h-[250px] bg-white relative">
                     <img src="icon/hexa-purple.png" alt=""
@@ -153,7 +153,7 @@
 
                 </div>
                 <div
-                    class="border-b-2 border-b-red-600 flex flex-col justify-center   w-1/3 w-64 h-h-[250px] bg-white relative ">
+                    class=" border-b-2 border-b-red-600 flex flex-col justify-center   w-1/3 w-64 h-[250px] bg-white relative ">
                     <img src="icon/hexagrid.png" alt="" class="w-32 mx-auto absolute -top-14 left-1/2 -translate-x-1/2">
                     <div class=" pt-20">
                         <p class="font-bold">DESIGN</p>
@@ -161,7 +161,7 @@
                     </div>
                 </div>
                 <div
-                    class="border-b-2 border-b-blue-600 flex flex-col justify-center  w-1/3 w-64 h-h-[250px] bg-white relative ">
+                    class="border-b-2 border-b-blue-600 flex flex-col justify-center  w-1/3 w-64 h-[250px] bg-white relative ">
                     <img src="icon/hexapink.png" alt="" class="w-32 mx-auto absolute -top-14 left-1/2 -translate-x-1/2">
                     <div class=" pt-20">
                         <p class="font-bold">APPLICATION</p>
@@ -184,7 +184,7 @@
                 <!-- progress element -->
 
 
-                <div class="flex flex-row items-center justify-between gap-10">
+                <div class="flex flex-col md:flex-row lg:items-center lg:justify-between lg:gap-10">
                     <div>
                         <p class="px-2">HTML</p>
 
@@ -217,8 +217,8 @@
                 </div>
 
                 <!--  progress element -->
-                <div class="flex flex-row items-center justify-between gap-10">
-                    <div class="py-5">
+                <div class="flex flex-col md:flex-row lg:items-center lg:justify-between lg:gap-10">
+                    <div class="lg:py-5">
                         <p class="px-2">Js</p>
                        <div class="flex flex-row gap-4 items-center">
                         <div class="bg-slate-200 w-80 h-2 rounded-full flex items-center">
@@ -231,7 +231,7 @@
                        </div>
                     </div>
                     <!-- Prog 3/4 -->
-                    <div class="py-5">
+                    <div class="lg:py-5">
                         <p class="px-2">React</p>
                        <div class="flex flex-row items-center gap-4">
                         <div class="bg-slate-200 w-80 h-2 rounded-full flex items-center">
@@ -338,8 +338,9 @@
                 <p class="space-italic text-2xl pt-12">CONTACT</p>
             </div>
             <!-- gmail -->
-            <div>
-                <div class="flex">
+            <div class="flex flex-col">
+            
+                <div class="flex items-center w-[500px]">
 
                     <div
                         class="bg-white w-24 h-24 rounded-sm mx-3 mt-4 relative flex items-center shadow-md shadow-red-400">
@@ -352,7 +353,7 @@
                     </div>
                 </div>
                 <!-- facebook -->
-                <div class="flex">
+                <div class="flex w-[500px]">
 
                     <div
                         class="bg-white w-24 h-24 rounded-sm mx-3 mt-4 relative flex items-center shadow-md shadow-blue-400">
@@ -363,11 +364,11 @@
                     <div class="mx-6 pt-12 text-blue-500  karla"><a href="https://www.facebook.com/ar.mouno/"
                             target="_blank">Ar Mouno</a></div>
                 </div>
-            </div>
+            
 
 
             <!-- phone -->
-            <div class="flex">
+            <div class="flex w-[500px]">
 
                 <div
                     class="bg-white w-24 h-24 rounded-sm mx-3 mt-4 relative flex items-center shadow-md shadow-green-400">
@@ -381,7 +382,7 @@
             </div>
 
             <!-- linkdin -->
-            <div class="flex">
+            <div class="flex w-[500px]">
 
                 <div
                     class="bg-white w-24 h-24 rounded-sm mx-3 mt-4 relative flex items-center shadow-md shadow-purple-400">
@@ -390,7 +391,9 @@
 
                 </div>
                 <div class="mx-6 pt-12 text-blue-500  karla"><a href="https://www.linkedin.com/in/ar-mouno-405263278/"
-                        target="_blank">Ar Mouno</a></div>
+                        target="_blank">Ar Mouno</a>
+                    </div>
+                </div>
             </div>
 
 
