@@ -14,7 +14,7 @@
     <div class="lg:grid  lg:grid-cols-8 gap-1">
 
         <!-- Column1 -->
-        <div class="bg-slate-50 p-4  lg:col-span-2  h-max relative max-h-screen lg:overflow-y-scroll">
+        <div class="lg:bg-slate-50 p-4  lg:col-span-2  h-max relative max-h-screen lg:overflow-y-scroll">
 
             <div>
                 <img src="Mouno.jpg" alt="" class="rounded-full w-24 flex mx-auto py-5 ">
@@ -28,19 +28,23 @@
                 <ul class="space-y-3 flex flex-col items-center py-4 font-thin">
                     <li
                         class=" hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform hover:scale-110 cursor-pointer hover:transition-transform">
-                        Home</li>
+                        <a href="#home">Home</a>
+                    </li>
                     <li
                         class=" hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform">
-                        Service</li>
+                        <a href="#aboutme">Service</a></li>
                     <li
                         class=" hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform">
-                        Skill</li>
+                        <a href="#skill">Skill</a>
+                        </li>
                     <li
                         class=" hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform">
-                        Education</li>
+                        <a href="#education">Education</a>
+                        </li>
                     <li
                         class=" hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform">
-                        About</li>
+                        <a href="#about">About</a>
+                        </li>
                     <li
                         class=" hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform">
                         Experence</li>
@@ -49,20 +53,22 @@
                         Work</li>
                     <li
                         class=" hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform">
-                        Contact</li>
+                        <a href="#Contact">Contact</a>
+                        </li>
                 </ul>
             </div>
-            <div class="flex flex-col items-center py-4 font-extralight">
+            <div class="flex flex-col items-center py-4 font-extralight md:border-b-2">
                 <p>© Copyright 2024 All rights reserved.</p>
                 <p>Made with by Colorlib.</p>
                 <p>Distributed by ThemeWagon.</p>
                 <p>Demo Images: Unsplash.com</p>
+                
             </div>
         </div>
 
         <!-- Column 2 -->
-        <div class="bg-gray-300  p-4 col-span-6 relative max-h-screen lg:overflow-y-scroll">
-            <div class="pt-32 pb-32 flex justify-between items-center">
+        <div class="lg:bg-gray-300 p-4 col-span-6 relative max-h-screen lg:overflow-y-scroll">
+            <div class="pt-32 pb-32 flex justify-between items-center" id="home">
 
                 <!-- First page -->
 
@@ -90,7 +96,7 @@
 
             <!-- About Me page -->
 
-            <div class="flex flex-col py-20">
+            <div class="flex flex-col py-20 " id="aboutme" >
                 <hr>
                 <p class="font-thin py-3 space-italic text-2xl">About Me</p>
                 <p class="text-6xl font-bold font-hero py-3 space-italic text-2xl">Who am I?</p>
@@ -174,7 +180,7 @@
 
             <!-- Skill page -->
 
-            <div class="pt-28">
+            <div class="pt-28" id="skill">
                 <hr>
                 <p class="py-4 space-italic text-2xl">MY Skills</p>
                 <p class="font-thin pt-4 pb-10">The Big Oxmox advised her not to do so, because there were thousands of
@@ -249,7 +255,7 @@
 
             </div>
             <!-- Education -->
-            <div>
+            <div id="education">
                 <hr>
                 <p class="py-8 space-italic text-2xl">Education</p>
 
@@ -303,7 +309,7 @@
                     </div>
                 </div>
                 <!-- EX2 -->
-                <div class="flex">
+                <div class="flex" id="about">
                     <div class=" flex flex-col items-center w-12">
                         <img src="icon/circle-experence.png" alt="" class="h-12 w-12 border-4 rounded-full ">
                         <div class="bg-gray-100 h-72 w-[5px] "></div>
@@ -348,7 +354,7 @@
 
 
                     </div>
-                    <div class="mx-6 pt-12 text-blue-500  karla">
+                    <div class="mx-6 pt-12 text-blue-500  karla" id="Contact">
                         <p>mouno.cse118@gmail.com</p>
                     </div>
                 </div>
