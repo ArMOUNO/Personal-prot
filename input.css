@@ -50,3 +50,35 @@
         width: 100%;
     }
 }
+
+.past-main {
+  background-color:#fff;
+  color:#444;
+}
+.anim{
+  border-right: 5px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: typing 2s steps(27),
+  cursor .4s step-end infinite alternate;
+  
+
+ } 
+ @keyframes cursor{
+  50% { border-color: transparent
+}}
+
+@keyframes typing{
+  from {width: 0;}
+}
+
+
+@keyframes animate{
+  0%{
+    left:120% ;
+  }
+  100%{
+    left: -20%;
+  }
+}

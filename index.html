@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="input.css">
     <link rel="stylesheet" href="path/to/animate.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script/script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </head>
 
-<body class="relative">
+<body class="relative" id="main">
     <div class="lg:grid  lg:grid-cols-8 gap-1">
 
         <!-- Column1 -->
-        <div class="lg:bg-slate-50 p-4  lg:col-span-2  h-max relative max-h-screen lg:overflow-y-scroll">
+        <div class="lg:bg-slate-50  p-4   lg:col-span-2  h-max relative max-h-screen lg:overflow-y-scroll hidden lg:block" id="dropdown">
+           
 
             <div>
                 <img src="Mouno.jpg" alt="" class="rounded-full w-24 flex mx-auto py-5 ">
@@ -24,40 +27,40 @@
                 <h3>Web Developer</h3>
 
             </div>
-            <div>
+            <div class="nav-link">
                 <ul class="space-y-3 flex flex-col items-center py-4 font-thin">
                     <li
-                        class=" hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform hover:scale-110 cursor-pointer hover:transition-transform">
+                        class=" lg:hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform hover:scale-110 cursor-pointer hover:transition-transform">
                         <a href="#home">Home</a>
                     </li>
                     <li
-                        class=" hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform">
+                        class=" lg:hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform">
                         <a href="#aboutme">Service</a></li>
                     <li
-                        class=" hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform">
+                        class=" lg:hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform">
                         <a href="#skill">Skill</a>
                         </li>
                     <li
-                        class=" hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform">
+                        class=" lg:hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform">
                         <a href="#education">Education</a>
                         </li>
                     <li
-                        class=" hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform">
+                        class=" lg:hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform">
                         <a href="#about">About</a>
                         </li>
                     <li
-                        class=" hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform">
+                        class=" lg:hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform">
                         Experence</li>
                     <li
-                        class=" hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform">
+                        class=" lg:hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform">
                         Work</li>
                     <li
-                        class=" hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform">
+                        class=" lg:hover:text-blue-400 hover:underline cursor-pointer hover:scale-110 cursor-pointer hover:transition-transform">
                         <a href="#Contact">Contact</a>
                         </li>
                 </ul>
             </div>
-            <div class="flex flex-col items-center py-4 font-extralight md:border-b-2">
+            <div class="lg:flex flex-col items-center py-4 font-extralight md:border-b-2 hidden">
                 <p>© Copyright 2024 All rights reserved.</p>
                 <p>Made with by Colorlib.</p>
                 <p>Distributed by ThemeWagon.</p>
@@ -65,29 +68,31 @@
                 
             </div>
         </div>
+       
 
         <!-- Column 2 -->
-        <div class="lg:bg-gray-300 p-4 col-span-6 relative max-h-screen lg:overflow-y-scroll">
+        <div class="lg:bg-gray-300 p-4 col-span-6 max-h-screen lg:overflow-y-scroll">
+          
+            <div >
+                <ion-icon name="menu" onclick="onToggleMenu(this)" class="text-3xl cursor-pointer lg:hidden absolute top-0 left-0"></ion-icon>
+            </div>
+
             <div class="pt-32 pb-32 flex justify-between items-center" id="home">
 
                 <!-- First page -->
 
                 <div>
-                    <p class="text-6xl font-bold anim-fade-in sedan-sc-regular ">Hi!</p>
+                    <p class="text-6xl font-bold anim-fade-in sedan-sc-regular "><span class="text-red-500">H</span>i!</p>
                     <p class="flex flex-col text-6xl font-hero font-bold anim-fade-in sedan-sc-regular">I'm Mouno.</p>
-                    <p class="flex flex-col py-3 text-1xl font-thin anim-fade-in">Professional Web Developer.</p>
+                    <p class="flex flex-col py-3 text-1xl font-thin anim-fade-in ">Professional Web Developer.</p>
                     <button
-                        class=" pt-5border-[1.5px] w-32 text-center px-3 py-2 rounded-xl font-light bg-slate-400 text-blue-50 hover:transition duration-500 ease-in-out transform hover:scale-105 hover:bg-red-400 hover:text-white hover:cursor-pointer hover:active:bg-slate-500"><a href="MounoCV.pdf" download >Download  CV</a>
+                        class="mt-3 animate-bounce pt-5border-[1.5px] w-32 text-center px-3 py-2 rounded-xl font-light bg-slate-400 text-blue-50 hover:transition duration-500 ease-in-out transform hover:scale-105 hover:bg-red-400 hover:text-white hover:cursor-pointer hover:active:bg-slate-500"><a href="MounoCV.pdf" download >Download  CV</a>
                        </button>
                     <div>
-                        <p class="pt-16 text-6xl font-bold space-italic  animate-slide-right">Welcome to my portfolio...
-                        </p>
-
-
-                        <span class="underline"></span>
-
-
-
+                        <div class="anim inline-block pt-16 text-5xl font-bold space-italic  ">
+                           
+                          Welcome to my portfolio...
+                        </div>
 
                     </div>
                 </div>
@@ -133,7 +138,7 @@
                     </p>
                     <div class="py-3">
                         <button
-                            class="border-2 rounded-sm h-8 w-24 hover:bg-red-500 hover:text-blue-50 hover:transform hover:scale-105 transition duration-300 hover:active:bg-yellow-900"><a href="#contact">HIRE ME</a>
+                            class="animate-bounce border-2 rounded-sm h-8 w-24 hover:bg-red-500 hover:text-blue-50 hover:transform hover:scale-105 transition duration-300 hover:active:bg-yellow-900"><a href="#contact">HIRE ME</a>
                             </button>
                     </div>
 
